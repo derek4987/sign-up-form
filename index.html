@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div>
+        <form action="http://httpbin.org/post" method="post">
+            <div>
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+                <label for="phone-nbr">PHONE NUMBER</label>
+                <input type="tel" name="phone-nbr" id="phone-nbr">
+            </div>
+            <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm-password"></label>
+                <input type="password" name="confirm-password" id="confirmpassword">
+            </div>
+            <div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="http://google.com">Log-in</a></p>
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>

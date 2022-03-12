@@ -1,0 +1,6 @@
+
+/* import downloaded logo font */
+@font-face {
+    font-family: odin-font;
+    src: url(./Fonts/Norse-Bold.otf);
+}
