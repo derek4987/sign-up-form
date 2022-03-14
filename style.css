@@ -4,3 +4,81 @@
     font-family: odin-font;
     src: url(./Fonts/Norse-Bold.otf);
 }
+
+:root {
+    --leftPanelWidthMax: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.page-content {
+    display: flex;
+    max-width: 80vw;
+}
+
+/* Left panel content */
+.left-panel {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: var(--leftPanelWidthMax);
+    height: 100vh;
+    flex: 1;
+    margin: 0;
+}
+.bg-image {
+    object-fit: cover;
+    width: var(--leftPanelWidthMax);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.logo-bg {
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    flex: 0;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: var(--leftPanelWidthMax);
+    max-height: 180px;
+    box-sizing: border-box;
+    padding: 25px;
+}
+.logo-bg img {
+    object-fit: scale-down;
+    height: 130px;
+}
+.logo-bg h2 {
+    font-family: odin-font;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.img-credit {
+    font-size: 1rem;
+    text-align: center;
+    margin: auto 0 30px 0;
+    color: white;
+}
+.img-credit a {
+    color: white;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+}
