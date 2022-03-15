@@ -28,31 +28,31 @@
                 <div class="form-row">
                     <div class="inputs">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input class="standard" type="text" name="first-name" id="first-name">
                     </div>
                     <div class="inputs">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input class="standard" type="text" name="last-name" id="last-name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="inputs">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                        <input class="standard" type="email" name="email" id="email">
                     </div>
                     <div class="inputs">
                         <label for="phone-nbr">PHONE NUMBER</label>
-                        <input type="tel" name="phone-nbr" id="phone-nbr" required>
+                        <input class="standard" type="tel" name="phone-nbr" id="phone-nbr" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter a valid phone number ex:1112223333">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="inputs">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required>
+                        <input class="password" type="password" name="password" id="password" placeholder="password" required pattern="^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{7,}$" title="Password must be at least 7 characters and contain at least one special character, one number, one uppercase and one lowercase Letter.">
                     </div>
                     <div class="inputs">
                         <span class="confirm-password">CONFIRM PASSWORD</span>
-                        <input type="password" id="confirmpassword" required>
+                        <input class="password" type="password" id="confirmpassword" placeholder="confirm password" required>
                     </div>
                 </div>    
             </form>
