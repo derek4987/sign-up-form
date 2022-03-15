@@ -18,34 +18,48 @@
             <span class="img-credit">Photo by <a href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
         </div>
         <div class="right-panel">
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis rutrum turpis, vel sagittis elit. Vestibulum id metus sed justo vulputate pellentesque ut eget augue. Vestibulum est nisi, efficitur sit amet dignissim id, tempor eu libero. Ut posuere lacinia tellus sit amet tincidunt.</p>
+            <div class="main-txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis rutrum turpis, vel sagittis elit. Vestibulum id metus sed justo vulputate pellentesque ut eget augue.</p>
                 <p>Sign up below</p>
             </div>
-            <form action="http://httpbin.org/post" method="post">
-                <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+            
+            <form action="http://httpbin.org/post" method="post" id="sign-up">
+                <span>Let's do this!</span>
+                <div class="form-row">
+                    <div class="inputs">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="inputs">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone-nbr">PHONE NUMBER</label>
-                    <input type="tel" name="phone-nbr" id="phone-nbr">
+                <div class="form-row">
+                    <div class="inputs">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="phone-nbr">PHONE NUMBER</label>
+                        <input type="tel" name="phone-nbr" id="phone-nbr" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                    <label for="confirm-password"></label>
-                    <input type="password" name="confirm-password" id="confirmpassword">
-                </div>
-                <div>
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="http://google.com">Log-in</a></p>
-                </div>
+                <div class="form-row">
+                    <div class="inputs">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="inputs">
+                        <span class="confirm-password">CONFIRM PASSWORD</span>
+                        <input type="password" id="confirmpassword" required>
+                    </div>
+                </div>    
             </form>
+            <div class="submit">
+                <button type="submit" form="sign-up">Create Account</button>
+                <p>Already have an account? <a href="http://google.com">Log-in</a></p>
+            </div>
         </div>
     </div>
     
